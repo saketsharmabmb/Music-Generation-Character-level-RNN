@@ -1,0 +1,31 @@
+<start>
+X:1
+T: La Montfara ou tIs durideft d's lec.tr
+O:France
+A:Prou
+StWantle) The Rdeas=e.
+.G- cd | c2B A G2 z2 ||
+<end>
+<start>
+X:52
+T:B.urr Au wary Ye Prlllie
+R:her
+S:pary EFrtencB2S my Bratt::Ad Gave minl BAnccAAG,A Cadw ons (1950 1930)! it !D.B.A | B4-2 | Fc G>G | B3/2d/2 AG :|
+|:F2 AF|E>A GB/AB|BA/B/ Bc|B/c/B/c/ e/g/b b3b|a2 ffe|Bd BB/B/|ed d/ d/|B/2B2 e2ec|d2 | B2 (3d>c| (3ffe z2 (3ffc|=edB cGce||
+<end>
+F2A c2A|Bcd ed | c2ee | A6 :|
+|: fd ec | 
+g3d dBed | d2d2zB | Bce d2B | d2d c2z2z | B3 AB | B2 | AA c2 | G4 | ~G3 AFD | AAF BcA | c2f dcd | B4 cd |
+B2BA B2B2 |
+d3- | B2c3 | c2B A2G | f4 e|fefed dc=B|de ec|cdAcBc3|AFG|AFG|BdAB begd|dBdBB df|
+<end>
+<start>
+X:13
+T:Yarr, The, Thamaally's Hollho zafe
+R:hornaighe
+T:Prove chle wou garin in Paunardu
+C:Trag.ures)
+Z:Transcrit et/ou corrig? par Miche' |
+GGFA cBAG|AAGA BcAF|AAFG AGFF|FDF A2F|A3G Af|AF f2F|a2f ABd|B^F | A2G2 | cBAB c<edB |A
+A2Ec G4:|
+|:32Bf c2A2|(3AFG
