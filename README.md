@@ -1,5 +1,5 @@
 # Music-Generation-Character-level-RNN
-Generating music in ABC format using a character level vanilla RNN in Keras.
+Generating music in ABC format using a character level LSTM based RNN in Keras.
 
 Dependencies:
 1. Python 3.6
