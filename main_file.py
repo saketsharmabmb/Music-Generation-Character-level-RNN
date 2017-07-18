@@ -55,7 +55,8 @@ output_dim = vocab_size
 hidden_dim = 100
 
 rnn_model = Sequential()
-rnn_model.add(SimpleRNN(hidden_dim, activation='tanh', return_sequences=True, input_shape=(None, vocab_size)))
+rnn_model.add(LSTM(hidden_dim, input_shape=(None, vocab_size)))
+# rnn_model.add(SimpleRNN(hidden_dim, activation='tanh', return_sequences=True, input_shape=(None, vocab_size)))
 rnn_model.add(Dense(output_dim))
 rnn_model.add(Activation('softmax'))
 rnn_model.compile(optimizer='adam',
@@ -64,7 +65,7 @@ rnn_model.compile(optimizer='adam',
 rnn_model.summary()
 print('Training')
 modelhistory = History()
-history = rnn_model.fit(X, y, batch_size=50, nb_epoch=epochs, validation_data=(X_val, y_val))
+history = rnn_model.fit(X, y[:, -1, :], batch_size=128, nb_epoch=epochs, validation_data=(X_val, y_val[:, -1, :]))
 
 # Function to get rnn layer output
 get_rnn_layer_output = K.function([rnn_model.layers[0].input], [rnn_model.layers[0].output])
@@ -89,7 +90,7 @@ for T in [1.0]:
         preds = rnn_model.predict(x, verbose=0)[0]
         layer_output = get_rnn_layer_output([x])[0]
         rnn_activations.append(layer_output[0][-1])
-        next_index = sample(preds[-1], T)
+        next_index = sample(preds, T)
         next_char = idx_2_char[next_index]
 
         generated += next_char
